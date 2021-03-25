@@ -11,11 +11,14 @@ public class Main {
             String names[] = {"Max", "John", "Mike", "Nick", "Jack", "Paul"};
             Random random = new Random();
             int index = random.nextInt(names.length);
-            allPersons[j] = new Person(names[index], "Ivanov");
+            int age = random.nextInt(55);
+            int height = random.nextInt(190);
+            int weight = random.nextInt(100);
+            allPersons[j] = new Person(names[index], "Ivanov",age,height,weight);
         }
 
         for (int i = 0; i < allPersons.length; i++) {
-            System.out.print(allPersons[i].firstName + ", ");
+            System.out.println(allPersons[i]);
 
         }
     }
